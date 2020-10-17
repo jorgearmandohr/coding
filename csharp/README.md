@@ -25,7 +25,17 @@ private global variables can start with uderscore _
 ## Code  
 
 Try not to use this. unless is strictly neccessary
+`
+    Example:
+    wrong: this.globalVariableName = "some value";
+    right: globalVariableName = "some value";
+`
+
 Always represent class, method and variable visibility
+`
+    wrong: void SomeVoidMethod(){..}
+    right: private void SomeVoidMethod(){...}
+`
 Order method according its visibility Public goes first, internal second, private third.
 Do not use partial clases unless absolutely neccessary.
 
