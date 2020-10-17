@@ -25,30 +25,33 @@ private global variables can start with uderscore _
 ## Code  
 
 Try not to use this. unless is strictly neccessary
-`
+
+```cs
     Example:
     wrong: this.globalVariableName = "some value";
     right: globalVariableName = "some value";
-`
+```
 
 Always represent class, method and variable visibility
-`
-    wrong: void SomeVoidMethod(){..}
+
+```cs
+    wrong: void SomeVoidMethod(){...}
     right: private void SomeVoidMethod(){...}
-`
+```
+
 Order method according its visibility Public goes first, internal second, private third.
 Do not use partial clases unless absolutely neccessary.
 
 ### Comments
 
-Do not use comments to explain code or business. desicions unless absolutely neccessary.
+Do not use comments to explain code or business. decisions unless absolutely neccessary.
 Use only comments to produce intellicense.
 Sing clases with copyright if required by the business
 
 ### Identation
 
 Try to use tabs insted of spaces.
-Each braces should be in a single line
+Each braces should be in a single line.
 Add braces in conditionals, loops and every codig structure which includes braces in its definition.
 
 Prefer interfaces over implemetation (more at OOP).
